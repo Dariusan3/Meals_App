@@ -1,16 +1,22 @@
-# meals
+# Meal Planner App 🍽️
 
-A new Flutter project.
+A user-friendly app to explore, filter, and manage your favorite meals. Perfect for those who want to organize their meals by category and dietary preferences.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🗂️ Explore Categories
+- Browse through a variety of meal categories.
+- Select a category to view the meals within it.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ❤️ Favorite Meals
+- Mark meals as favorites and access them easily in the **Favorites** tab.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🔍 Advanced Filters
+- Personalize your meal selection with these filters:
+  - **Gluten-Free**  
+  - **Lactose-Free**  
+  - **Vegetarian**  
+  - **Vegan**
+- Apply and switch filters to view meals tailored to your preferences.
