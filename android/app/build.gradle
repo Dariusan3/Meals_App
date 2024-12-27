@@ -1,0 +1,40 @@
+plugins {
+    id "com.android.application" version "8.2.1" apply false  // Ensure the AGP version matches here
+    id "org.jetbrains.kotlin.android" version "1.8.22" apply false  // Add Kotlin plugin version
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter plugin
+}
+
+android {
+    namespace = "com.example.meals"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        // Updated to use Java 17 for compatibility with the latest Gradle versions.
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Matches the updated Java version
+    }
+
+    defaultConfig {
+        applicationId = "com.example.meals"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Signing configuration for release builds.
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
